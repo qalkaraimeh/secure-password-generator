@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/secure-password-generator/static/css/main.1c1b507b.css",
+    "main.js": "/secure-password-generator/static/js/main.4e88f75e.js",
+    "index.html": "/secure-password-generator/index.html",
+    "main.1c1b507b.css.map": "/secure-password-generator/static/css/main.1c1b507b.css.map",
+    "main.4e88f75e.js.map": "/secure-password-generator/static/js/main.4e88f75e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c1b507b.css",
+    "static/js/main.4e88f75e.js"
+  ]
+}
