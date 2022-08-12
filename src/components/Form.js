@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import { generatePassword } from "./FormHelper";
 
 const Form = () => {
-  console.log(generatePassword(true, true, 24));
   const numberRef = useRef();
   const symbolRef = useRef();
   const lengthRef = useRef();
@@ -21,16 +20,15 @@ const Form = () => {
     <form className="password-form" onSubmit={handleSubmit}>
       <h2>Generate a secure password!</h2>
       <div className="password-input">
-        <h4 className="password-text">{passwordText}</h4>
+        <p className="password-text">{passwordText}</p>
         <div className="flex-container">
-          <label htmlFor="password-length">password length ?</label>
+          <label htmlFor="password-length">password length?</label>
           <input
             type="number"
             name="password-length"
             id="password-length"
             max={44}
             min={6}
-            style={{ maxWidth: "8ch" }}
             ref={lengthRef}
           />
         </div>

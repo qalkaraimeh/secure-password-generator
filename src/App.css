@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -16,28 +15,31 @@ body {
   background-color: #2d3c57;
 }
 .title {
+  margin-top: -1em;
   margin-bottom: 2em;
   text-align: center;
-  color: #faebd7;
+  color: #fff;
 }
 .password-form {
-  padding: 30px;
-  background-color: white;
+  padding: 25px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border-radius: 0.3rem;
   min-height: 280px;
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.4);
+  width: 60vw;
 }
 
 .password-text {
   padding: 10px;
+  font-size: 0.8em;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 0.3rem;
-  width: 75ch;
   min-height: 2.4rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .password-inputs {
@@ -45,11 +47,15 @@ body {
   flex-direction: column;
   gap: 8px;
 }
+#password-length {
+  width: 3.5em;
+}
 
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0.5em 0;
 }
 
 label {
@@ -76,10 +82,10 @@ label {
   background-color: rgb(14, 11, 192);
 }
 @media screen and (max-width: 768px) {
-  .password-form {
-    width: 420px;
-  }
   .password-text {
-    width: 44ch;
+    font-size: 0.8em;
+  }
+  .password-form {
+    width: 93vw;
   }
 }
